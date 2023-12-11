@@ -33,6 +33,13 @@ class Face_Recognition:
         f_label= Label(self.root, image= self.photoimg2)
         f_label.place(x=850, y=0, width=425, height= 100)
       
+        #Bg Image
+        img3= Image.open(r"Python\Images\logo-9.png")
+        img3= img3.resize((1270,600), Image.LANCZOS)
+        self.photoimg3= ImageTk.PhotoImage(img3)
+      
+        bg_img= Label(self.root, image= self.photoimg3)
+        bg_img.place(x=0, y=100, width=1270, height= 600)
       
         
 if __name__=="__main__":
