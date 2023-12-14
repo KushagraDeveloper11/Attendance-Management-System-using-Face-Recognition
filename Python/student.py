@@ -85,7 +85,7 @@ class Student:
         dep_label=Label(current_course_frame,text="Department",font=("times new roman",12,"bold"),bg="white")
         dep_label.grid(row=0,column=0,padx=10,sticky=W)
 
-        dep_combo=ttk.Combobox(current_course_frame,font=("times new roman",12,"bold"),state="read only",width=20)
+        dep_combo=ttk.Combobox(current_course_frame,textvariable=self.var_dep, font=("times new roman",12,"bold"),state="read only",width=20)
         dep_combo["values"]=("Select Department","Computer Science","Civil","Mechanical","IT","ECE")
         dep_combo.current(0)
         dep_combo.grid(row=0,column=1,padx=2,pady=10,sticky=W)
