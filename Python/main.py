@@ -40,7 +40,97 @@ class Face_Recognition:
       
         bg_img= Label(self.root, image= self.photoimg3)
         bg_img.place(x=0, y=100, width=1270, height= 600)
-      
+        
+        title_lbl= Label(bg_img, text="SMART ATTENDANCE MANAGEMENT SYSTEM", font=("times new roman", 35, "bold"), bg="black", fg= "green")
+        title_lbl.place(x=0, y=0, width=1270, height= 50)
+
+        #student-button
+        bimg= Image.open(r"Python\Images\logo-9.png")
+        bimg= bimg.resize((220,220), Image.LANCZOS)
+        self.photobimg= ImageTk.PhotoImage(bimg)
+        
+        b1= Button(bg_img, image=self.photobimg, cursor="hand2")
+        b1.place(x=100, y=100, width=200, height=120)
+        
+        b1_1= Button(bg_img, text="Student Details", cursor="hand2", font=("times new roman", 15, "bold"), bg="darkblue", fg= "white")
+        b1_1.place(x=100, y=220, width=200, height=30)
+        
+        #Detect Face
+        fimg= Image.open(r"Python\Images\logo-9.png")
+        fimg= fimg.resize((220,220), Image.LANCZOS)
+        self.photoimgf= ImageTk.PhotoImage(fimg)
+        
+        b2= Button(bg_img, image=self.photoimgf, cursor="hand2")
+        b2.place(x=100, y=300, width=200, height=120)
+        
+        b2_1= Button(bg_img, text="Detect Face", cursor="hand2", font=("times new roman", 15, "bold"), bg="darkblue", fg= "white")
+        b2_1.place(x=100, y=420, width=200, height=30)
+        
+        #Attendance
+        Aimg= Image.open(r"Python\Images\logo-9.png")
+        Aimg= Aimg.resize((220,220), Image.LANCZOS)
+        self.photoimgA= ImageTk.PhotoImage(Aimg)
+        
+        b3= Button(bg_img, image=self.photoimgA, cursor="hand2")
+        b3.place(x=400, y=300, width=200, height=120)
+        
+        b3_1= Button(bg_img, text="Attendance", cursor="hand2", font=("times new roman", 15, "bold"), bg="darkblue", fg= "white")
+        b3_1.place(x=400, y=420, width=200, height=30)
+        
+        #Help-button
+        Himg= Image.open(r"Python\Images\logo-9.png")
+        Himg= Himg.resize((220,220), Image.LANCZOS)
+        self.photoHimg= ImageTk.PhotoImage(Himg)
+        
+        bH= Button(bg_img, image=self.photoHimg, cursor="hand2")
+        bH.place(x=400, y=100, width=200, height=120)
+        
+        b1_H= Button(bg_img, text="Guide", cursor="hand2", font=("times new roman", 15, "bold"), bg="darkblue", fg= "white")
+        b1_H.place(x=400, y=220, width=200, height=30)
+        
+        #Train-button
+        Timg= Image.open(r"Python\Images\logo-9.png")
+        Timg= Timg.resize((220,220), Image.LANCZOS)
+        self.photoTimg= ImageTk.PhotoImage(Timg)
+        
+        tH= Button(bg_img, image=self.photoTimg, cursor="hand2")
+        tH.place(x=700, y=100, width=200, height=120)
+        
+        b1_T= Button(bg_img, text="Train", cursor="hand2", font=("times new roman", 15, "bold"), bg="darkblue", fg= "white")
+        b1_T.place(x=700, y=220, width=200, height=30)
+        
+        #Button-1
+        img_1= Image.open(r"Python\Images\logo-9.png")
+        img_1= img_1.resize((220,220), Image.LANCZOS)
+        self.photoimg_1= ImageTk.PhotoImage(img_1)
+        
+        b11= Button(bg_img, image=self.photoimg_1, cursor="hand2")
+        b11.place(x=1000, y=100, width=200, height=120)
+        
+        b1_11= Button(bg_img, text="Button-1", cursor="hand2", font=("times new roman", 15, "bold"), bg="darkblue", fg= "white")
+        b1_11.place(x=1000, y=220, width=200, height=30)
+        
+        #Button-2
+        img_2= Image.open(r"Python\Images\logo-9.png")
+        img_2= img_2.resize((220,220), Image.LANCZOS)
+        self.photoimg_2= ImageTk.PhotoImage(img_2)
+        
+        b22= Button(bg_img, image=self.photoimg_2, cursor="hand2")
+        b22.place(x=700, y=300, width=200, height=120)
+        
+        b1_22= Button(bg_img, text="Guide", cursor="hand2", font=("times new roman", 15, "bold"), bg="darkblue", fg= "white")
+        b1_22.place(x=700, y=420, width=200, height=30)
+        
+        #Button-3
+        img_3= Image.open(r"Python\Images\logo-9.png")
+        img_3= img_3.resize((220,220), Image.LANCZOS)
+        self.photoimg_3= ImageTk.PhotoImage(img_3)
+        
+        b_3= Button(bg_img, image=self.photoimg_3, cursor="hand2")
+        b_3.place(x=1000, y=300, width=200, height=120)
+        
+        b1_33= Button(bg_img, text="Guide", cursor="hand2", font=("times new roman", 15, "bold"), bg="darkblue", fg= "white")
+        b1_33.place(x=1000, y=420, width=200, height=30)
         
 if __name__=="__main__":
     root= Tk()
