@@ -132,6 +132,9 @@ class Face_Recognition:
         b1_33= Button(bg_img, text="Guide", cursor="hand2", font=("times new roman", 15, "bold"), bg="darkblue", fg= "white")
         b1_33.place(x=1000, y=420, width=200, height=30)
         
+
+
+
 if __name__=="__main__":
     root= Tk()
     obj= Face_Recognition(root)
