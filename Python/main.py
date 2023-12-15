@@ -11,7 +11,7 @@ class Face_Recognition:
         self.root.title("Face Recognition System")
       
         #Logo
-        img= Image.open(r"Python/Images/logo-9.png")
+        img= Image.open(r"Python\Images\logo-9.png")
         img= img.resize((200,100), Image.LANCZOS)
         self.photoimg= ImageTk.PhotoImage(img)
       
@@ -19,7 +19,7 @@ class Face_Recognition:
         f_label.place(x=0, y=0, width=200, height= 100)
         
         #Image 1
-        img1= Image.open(r"Python/Images/background2.png")
+        img1= Image.open(r"Python\Images\background2.png")
         img1= img1.resize((425,100), Image.LANCZOS)
         self.photoimg1= ImageTk.PhotoImage(img1)
       
@@ -27,7 +27,7 @@ class Face_Recognition:
         f_label.place(x=200, y=0, width=1080, height= 100)
         
         # Image 2
-        img2= Image.open(r"Python/Images/background2.png")
+        img2= Image.open(r"Python\Images\background2.png")
         img2= img2.resize((425,100), Image.LANCZOS)
         self.photoimg2= ImageTk.PhotoImage(img2)
       
@@ -35,7 +35,7 @@ class Face_Recognition:
         f_label.place(x=850, y=0, width=425, height= 100)
       
         #Bg Image
-        img3= Image.open(r"Python/Images/background.jpg")
+        img3= Image.open(r"Python\Images\background.jpg")
         img3= img3.resize((1270,600), Image.LANCZOS)
         self.photoimg3= ImageTk.PhotoImage(img3)
       
@@ -46,7 +46,7 @@ class Face_Recognition:
         title_lbl.place(x=0, y=0, width=1270, height= 50)
 
         #student-button
-        bimg= Image.open(r"Python/Images/student-details.jpg")
+        bimg= Image.open(r"Python\Images\student-details.jpg")
         bimg= bimg.resize((200,120), Image.LANCZOS)
         self.photobimg= ImageTk.PhotoImage(bimg)
         
@@ -57,7 +57,7 @@ class Face_Recognition:
         b1_1.place(x=100, y=220, width=200, height=30)
         
         #Detect Face
-        fimg= Image.open(r"Python/Images/detect-face.png")
+        fimg= Image.open(r"Python\Images\detect-face.png")
         fimg= fimg.resize((120,120), Image.LANCZOS)
         self.photoimgf= ImageTk.PhotoImage(fimg)
         
@@ -68,7 +68,7 @@ class Face_Recognition:
         b2_1.place(x=100, y=420, width=200, height=30)
         
         #Attendance
-        Aimg= Image.open(r"Python/Images/attendance.jpg")
+        Aimg= Image.open(r"Python\Images\attendance.jpg")
         Aimg= Aimg.resize((120,120), Image.LANCZOS)
         self.photoimgA= ImageTk.PhotoImage(Aimg)
         
@@ -79,7 +79,7 @@ class Face_Recognition:
         b3_1.place(x=400, y=420, width=200, height=30)
         
         #Help-button
-        Himg= Image.open(r"Python/Images/help.png")
+        Himg= Image.open(r"Python\Images\help.png")
         Himg= Himg.resize((120,120), Image.LANCZOS)
         self.photoHimg= ImageTk.PhotoImage(Himg)
         
@@ -90,7 +90,7 @@ class Face_Recognition:
         b1_H.place(x=400, y=220, width=200, height=30)
         
         #Train-button
-        Timg= Image.open(r"Python/Images/train-data-1.png")
+        Timg= Image.open(r"Python\Images\train-data-1.png")
         Timg= Timg.resize((120,120), Image.LANCZOS)
         self.photoTimg= ImageTk.PhotoImage(Timg)
         
@@ -101,7 +101,7 @@ class Face_Recognition:
         b1_T.place(x=700, y=220, width=200, height=30)
         
         #Button-1
-        img_1= Image.open(r"Python/Images/developer.png")
+        img_1= Image.open(r"Python\Images\developer.png")
         img_1= img_1.resize((200,120), Image.LANCZOS)
         self.photoimg_1= ImageTk.PhotoImage(img_1)
         
@@ -112,7 +112,7 @@ class Face_Recognition:
         b1_11.place(x=1000, y=220, width=200, height=30)
         
         #Button-2
-        img_2= Image.open(r"Python/Images/user-guide.png")
+        img_2= Image.open(r"Python\Images\user-guide.png")
         img_2= img_2.resize((120,120), Image.LANCZOS)
         self.photoimg_2= ImageTk.PhotoImage(img_2)
         
@@ -123,7 +123,7 @@ class Face_Recognition:
         b1_22.place(x=700, y=420, width=200, height=30)
         
         #Button-3
-        img_3= Image.open(r"Python/Images/photos.png")
+        img_3= Image.open(r"Python\Images\photos.png")
         img_3= img_3.resize((120,120), Image.LANCZOS)
         self.photoimg_3= ImageTk.PhotoImage(img_3)
         
